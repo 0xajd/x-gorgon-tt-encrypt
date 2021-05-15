@@ -1,21 +1,27 @@
-# TikTok X-Gorgon & X-Khronos Generation
+# TikTok X-Gorgon & TTEncrypt
 
-X-Gorgon/X-Khronos headers are required for mobile app api requests. My API provides the standalone solution without any external or special requirements to do the calculations
+**X-Gorgon/X-Khronos** headers are required for mobile app api requests. My API provides the standalone solution without any external or special requirements to do the calculations
 
-The script can run as library/module on any platform with Python v3.8+ or NodeJS v12+ without any dependency with Frida/Emulators/ADB of any kind
+**TTEncrypt** is required to do device registrations, applog for valid api requests.
 
-## Availble in:
+The script can run as library/module on any platform with Python v3.8+, PHP v7+ & NodeJS v12+ without any dependency with Frida/Emulators/ADB of any kind
+
+## X-Gorgon:
 - NodeJS
 - Python
-- PHP (Translation in progress...)
+- PHP
 
-## Versions:
+## X Gorgon Versions:
 - v03 (Nodejs)
-- v0404 (NodeJS/Python)
+- v0404 (NodeJS/Python/PHP)
 
-## TikTok Version: 17.6.3
+## TTEncrypt
+TT Encrypt available for device registration and applog with no dependency of any device/emulators
+- PHP
+- Python
 
-Sample Response:
+
+X-Gorgon Response Object:
 ```json
 {
     "X-Gorgon": "0404d0e400010f39aa7f1704a5760372721ccf34c4f2ad41546b",
@@ -24,13 +30,25 @@ Sample Response:
 ```
 
 ## Usage:
+**NodeJS**
 ```javascript
 const gorgon=require('./lib/gorgon');
 const params="URL PARAMS STRINGIFIED"; // only GET request parameters
 const cookies="TIKTOK COOKIES"; // may be blank if you don't want to use session
-const data="POST DATA STRINGIFIED"; // blank if not using POST request
+const data="DATA JSON STRINGIFIED";
 const stub=md5(data);
 const xGorgonHeaders=gorgon(params,cookies,data);
 ```
+**PHP**
+```php
+// X Gorgon Generation
+$xgorgon= new Gorgon();
+$gorgonHeader=$gorgon->calculate("URL_PARAM_STRINGIFIED",$cookies,$data);
+
+$encrypt=new Encrypt();
+$tt_data=$encrypt->encrypt("POST_BODY_IN_JSON_FORMAT");
+```
+
+
 
 **Contact for details:** https://t.me/ssovit
