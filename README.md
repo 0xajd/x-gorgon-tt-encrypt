@@ -1,6 +1,6 @@
-# TikTok X-Gorgon & TTEncrypt
+# TikTok X-Gorgon & TTEncrypt in NodeJS, Python & PHP variants
 
-**X-Gorgon/X-Khronos** headers are required for mobile app api requests. My API provides the standalone solution without any external or special requirements to do the calculations
+**X-Gorgon/X-Khronos** headers are required for mobile app api requests. The library provides standalone solution without any external or special requirements to do the calculations
 
 **TTEncrypt** is required to do device registrations, applog for valid api requests.
 
