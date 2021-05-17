@@ -12,12 +12,13 @@ The script can run as library/module on any platform with Python v3.8+, PHP v7+ 
 - PHP
 
 ## X Gorgon Versions:
-- v03 (Nodejs)
+- v03 (NodeJS)
 - v0404 (NodeJS/Python/PHP)
 
 ## TTEncrypt
 TT Encrypt available for device registration and applog with no dependency of any device/emulators
 - PHP
+- NodeJS
 - Python
 
 
