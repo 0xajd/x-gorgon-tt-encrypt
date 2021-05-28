@@ -37,9 +37,9 @@ X-Gorgon Response Object:
 const gorgon=require('./lib/gorgon');
 const params="URL PARAMS STRINGIFIED"; // only GET request parameters
 const cookies="TIKTOK COOKIES"; // may be blank if you don't want to use session
-const data="DATA JSON STRINGIFIED";
+const data="POST DATA";
 const stub=md5(data);
-const xGorgonHeaders=gorgon(params,cookies,data);
+const xGorgonHeaders=gorgon(params,cookies,stub);
 
 // TTEncrypt post data
 const ttEncrypt=require('./lib/tt_encrypt');
@@ -49,7 +49,7 @@ const tt_encrypt_body=await ttEncrypt("POST_BODY_IN_JSON_FORMAT");
 ```php
 // X-Gorgon Generation
 $xgorgon= new Gorgon();
-$gorgonHeader=$gorgon->calculate("URL_PARAM_STRINGIFIED",$cookies,$data);
+$gorgonHeader=$gorgon->calculate("URL_PARAM_STRINGIFIED",$cookies,$stub);
 
 // TTEncrypt post data
 $encrypt=new Encrypt();
