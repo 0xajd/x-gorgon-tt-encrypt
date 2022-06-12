@@ -59,5 +59,6 @@ $tt_data=$encrypt->encrypt("POST_BODY_IN_JSON_FORMAT");
 
 
 ## Contact
-- Telegram: https://t.me/ssovit
-- Email: sovit.tamrakar@gmail.com
+- Telegram: https://t.me/xajd0
+- Email: xajd@protonmail.com
+
